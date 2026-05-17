@@ -16,7 +16,7 @@
 </div>
 
 <style>
-.hero{
+.hero{animation: float 3s ease-in-out infinite;
     text-align: center;
     padding: 60px 20px;
 }
@@ -67,7 +67,19 @@ body{
     background: linear-gradient(to right, #0f172a, #1e293b);
     color: white;
     font-family: Arial, sans-serif;
-    padding: 20px;
+    padding: 20px;@keyframes float{
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-10px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+    }
 }
 
 .card{
