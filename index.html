@@ -1,121 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Oliver Portfolio</title>
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial;
-}
-
-body{
-background:#0f172a;
-color:white;
-}
-
-header{
-background:#1e293b;
-padding:20px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
-
-header h1{
-color:#38bdf8;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin-left:20px;
-}
-
-.hero{
-height:90vh;
-display:flex;
-justify-content:center;
-align-items:center;
-flex-direction:column;
-text-align:center;
-padding:20px;
-}
-
-.hero h2{
-font-size:50px;
-margin-bottom:15px;
-}
-
-.hero span{
-color:#38bdf8;
-}
-
-.hero p{
-max-width:600px;
-line-height:1.7;
-font-size:18px;
-}
-
-.btn{
-margin-top:25px;
-padding:12px 30px;
-background:#38bdf8;
-border:none;
-border-radius:5px;
-color:white;
-font-size:16px;
-cursor:pointer;
-}
-
-footer{
-background:#1e293b;
-text-align:center;
-padding:20px;
-}
-
-</style>
-</head>
-
-<body>
-
-<header>
-
-<h1>Oliver</h1>
-
-<nav>
-<a href="#">Home</a>
-<a href="#">About</a>
-<a href="#">Services</a>
-<a href="#">Contact</a>
-</nav>
-
-</header>
-
-<section class="hero">
-
-<h2>Hello, I'm <span>Oliver Kemboi</span></h2>
-
-<p>
-I am a beginner Web Developer and Graphic Designer.
-Welcome to my personal portfolio website hosted on GitHub Pages.
-</p>
-
-<button class="btn">Explore More</button>
-
+<section class="card">
+    <h2>💻 My Skills</h2>
+    <div class="skills">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>Flexbox</span>
+        <span>GitHub</span>
+        <span>Graphic Design</span>
+    </div>
 </section>
 
-<footer>
+<section class="card">
+    <h2>🚀 Projects</h2>
+    <p>✔ Personal Portfolio Website</p>
+    <p>✔ Future Graphic Design Projects</p>
+    <p>🔥 More projects coming soon...</p>
+</section>
 
-<p>© 2026 Oliver Kemboi | All Rights Reserved</p>
+<section class="card">
+    <h2>📞 Contact</h2>
+    <p>Email: oliver@example.com</p>
+    <p>Instagram: @oliver.graphics</p>
+</section>
 
-</footer>
+<style>
+body{
+    background: linear-gradient(to right, #0f172a, #1e293b);
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
 
-</body>
-</html>
+.card{
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    transition: 0.4s;
+}
+
+.card:hover{
+    transform: translateY(-10px) scale(1.02);
+}
+
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills span{
+    background: cyan;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.skills span:hover{
+    transform: scale(1.1);
+    background: white;
+}
+</style>
