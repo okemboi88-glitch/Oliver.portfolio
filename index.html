@@ -1,118 +1,251 @@
-<section class="card">
-    <h2>💻 My Skills</h2>
-    <div class="skills">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>Flexbox</span>
-        <span>GitHub</span>
-        <span>Graphic Design</span>
-    </div>
-</section>
-<div class="hero">
-    <h1>Oliver Kibiwot Kemboi</h1>
-    <p>Web Developer • Graphic Designer • Future Tech Expert</p>
-
-    <button>Hire Me</button>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oliver Kibiwot Kemboi | Portfolio</title>
 
 <style>
-.hero{animation: float 3s ease-in-out infinite;
-    text-align: center;
-    padding: 60px 20px;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
 }
 
-.hero h1{
-    font-size: 38px;
-    color: cyan;
-    text-shadow: 0 0 20px cyan;
+body{
+    background:#f5f5f5;
+    color:#222;
+    line-height:1.6;
+}
+
+header{
+    background:linear-gradient(135deg, maroon, #7a0019);
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+
+nav h1{
+    font-size:2rem;
+    margin-bottom:15px;
+}
+
+nav ul{
+    list-style:none;
+}
+
+nav ul li{
+    display:inline-block;
+    margin:10px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.hero{
+    margin-top:30px;
+}
+
+.hero h2{
+    font-size:2rem;
+    margin-bottom:15px;
 }
 
 .hero p{
-    font-size: 18px;
-    margin: 15px 0;
-    color: #ddd;
+    max-width:700px;
+    margin:auto;
 }
 
-.hero button{
-    padding: 12px 25px;
-    border: none;
-    border-radius: 30px;
-    background: cyan;
-    color: black;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.4s;
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    background:white;
+    color:maroon;
+    padding:12px 24px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
 }
 
-.hero button:hover{
-    transform: scale(1.1);
-    background: white;
+.section{
+    padding:60px 20px;
+    text-align:center;
 }
-</style>
-<section class="card">
-    <h2>🚀 Projects</h2>
-    <p>✔ Personal Portfolio Website</p>
-    <p>✔ Future Graphic Design Projects</p>
-    <p>🔥 More projects coming soon...</p>
-</section>
 
-<section class="card">
-    <h2>📞 0704831469</h2>
-    <p>Email: okemboi88@gmail.com</p>
-    <p>Instagram: oli-the-one</p>
-</section>
+.section h2{
+    margin-bottom:20px;
+    color:maroon;
+}
 
-<style>
-body{
-    background: linear-gradient(to right, #0f172a, #1e293b);
-    color: white;
-    font-family: Arial, sans-serif;
-    padding: 20px;@keyframes float{
-    0%{
-        transform: translateY(0px);
-    }
-
-    50%{
-        transform: translateY(-10px);
-    }
-
-    100%{
-        transform: translateY(0px);
-    }
-    }
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
 }
 
 .card{
-    background: rgba(255,255,255,0.1);
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 20px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
-    transition: 0.4s;
+    background:white;
+    padding:25px;
+    width:320px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    transition:0.3s;
 }
 
 .card:hover{
-    transform: translateY(-10px) scale(1.02);
+    transform:translateY(-6px);
 }
 
-.skills{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+.card h3{
+    margin-bottom:10px;
+    color:maroon;
 }
 
-.skills span{
-    background: cyan;
-    color: black;
-    padding: 10px 15px;
-    border-radius: 30px;
-    font-weight: bold;
-    transition: 0.3s;
+.card a{
+    display:inline-block;
+    margin-top:15px;
+    color:maroon;
+    font-weight:bold;
+    text-decoration:none;
 }
 
-.skills span:hover{
-    transform: scale(1.1);
-    background: white;
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+@media(max-width:768px){
+    nav ul li{
+        display:block;
+        margin:8px 0;
+    }
+
+    .hero h2{
+        font-size:1.5rem;
+    }
+
+    .card{
+        width:90%;
+    }
 }
 </style>
+</head>
+
+<body>
+
+<header>
+
+<nav>
+<h1>Oliver Kibiwot Kemboi</h1>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+<h2>Web Developer & Architectural Design Enthusiast</h2>
+
+<p>
+I build responsive websites and explore architectural design,
+combining creativity with modern digital experiences.
+</p>
+
+<a href="#projects" class="btn">View Projects</a>
+</section>
+
+</header>
+
+<section id="about" class="section">
+<h2>About Me</h2>
+
+<p>
+Hi, I’m Oliver Kibiwot Kemboi from Kenya.
+I enjoy building modern websites using HTML, CSS and JavaScript,
+while also exploring architectural design and creative planning.
+</p>
+</section>
+
+<section id="skills" class="section">
+<h2>Skills</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Web Development</h3>
+<p>
+HTML5, CSS3, JavaScript,
+GitHub Pages and Responsive Design
+</p>
+</div>
+
+<div class="card">
+<h3>Architecture</h3>
+<p>
+Architectural Design,
+Creative Planning,
+Visual Presentation
+</p>
+</div>
+
+</div>
+</section>
+
+<section id="projects" class="section">
+<h2>Projects</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Travellers Hotel Website</h3>
+
+<p>
+A responsive hotel website designed for travelers
+with a clean layout and modern presentation.
+</p>
+
+<a href="https://okemboi88-glitch.github.io/travellers-hotel/" target="_blank">
+View Project
+</a>
+</div>
+
+<div class="card">
+<h3>Personal Portfolio</h3>
+
+<p>
+A professional portfolio website
+showcasing my skills and work.
+</p>
+
+<a href="https://okemboi88-glitch.github.io/Oliver.portfolio/" target="_blank">
+View Portfolio
+</a>
+</div>
+
+</div>
+</section>
+
+<section id="contact" class="section">
+<h2>Contact</h2>
+
+<p>Let’s work together.</p>
+<p>GitHub: okemboi88-glitch</p>
+</section>
+
+<footer>
+<p>© 2026 Oliver Kibiwot Kemboi | Built with HTML & CSS</p>
+</footer>
+
+</body>
+</html>
